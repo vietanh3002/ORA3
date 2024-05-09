@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./main.css" />
+  <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css" />
+  <script src="https://kit.fontawesome.com/5258df02df.js" crossorigin="anonymous"></script>
+  <!-- Script -->
+  <script src="./main.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+    integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <div class="main">
+    <!-- Begin Content -->
+    <div class="content-container">
+      <!-- Begin sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar box 1 -->
+        <div class="sidebar-box">
+          <div class="sidebar-head">
+            <img src="avatar.png" alt="" />
+            <p class="sidebar-heading">Nguyễn Việt Anh</p>
+          </div>
+
+          <div class="sidebar-list">
+            <div>
+              <a href="#">Thư báo<span id="letter-notification">0</span></a>
+            </div>
+            <div><a href="#">Đổi mật khẩu</a></div>
+            <div><a href="#">Cấp lại mật khẩu Email trường</a></div>
+            <div><a href="#">Thoát đăng nhập</a></div>
+            <div><a href="#">Thông tin mật khẩu Email cấp mới</a></div>
+            <div><a href="#">Xác nhận khai báo y tế</a></div>
+          </div>
+        </div>
+        <!-- Quản lý hồ sơ sinh viên -->
+        <div class="sidebar-box">
+          <div class="sidebar-head">
+            <p class="sidebar-heading">Quản lý hồ sơ sinh viên</p>
+          </div>
+
+          <div class="sidebar-list">
+            <div><a href="#">Thông tin sinh viên</a></div>
+            <div><a href="#">Cập nhật thông tin cá nhân</a></div>
+            <div><a href="#">Thông tin lớp sinh viên</a></div>
+          </div>
+        </div>
+
+        <!-- Đào tạo -->
+        <div class="sidebar-box">
+          <div class="sidebar-head">
+            <p class="sidebar-heading">Đào tạo</p>
+          </div>
+
+          <div id="daotao">
+            <div class="daotao-box">
+              <div class="daotao-item">
+                <i class="fa-sharp fa-solid fa-caret-down icons"></i>
+                <a href="#">Chương trình đào tạo</a>
+              </div>
+              <div class="daotao-submenu">
+                <a href="">Chương trình đào tạo sinh viên</a>
+                <a href="">Danh mục học phần</a>
+              </div>
+            </div>
+            <div class="daotao-box">
+              <div class="daotao-item">
+                <i class="fa-sharp fa-solid fa-caret-down icons"></i>
+                <a href="#">Kế hoạch học tập</a>
+              </div>
+              <div class="daotao-submenu">
+                <a href="">Đăng ký học phần</a>
+                <a href="">Thời khóa biểu</a>
+                <a href="">Tra cứu đăng ký lớp các kỳ</a>
+              </div>
+            </div>
+            <div class="daotao-box">
+              <div class="daotao-item">
+                <i class="fa-sharp fa-solid fa-caret-down icons"></i>
+                <a href="#">Kết quả học tập</a>
+              </div>
+              <div class="daotao-submenu">
+                <a href="">Kết quả thi Toeic</a>
+                <a href="">Bảng điểm cá nhân</a>
+                <a href="">Bảng điểm học phần</a>
+                <a href="">Kiểm tra nhập điểm kỳ mới nhất</a>
+              </div>
+            </div>
+            <div class="daotao-box">
+              <div class="daotao-item">
+                <i class="fa-sharp fa-solid fa-caret-down icons"></i>
+                <a href="#">Đồ án tốt nghiệp</a>
+              </div>
+              <div class="daotao-submenu">
+                <a href="">Kết quả xét nhận ĐATN</a>
+                <a href="">Đăng ký xét tốt nghiệp</a>
+              </div>
+            </div>
+            <div class="daotao-box" style="margin-top: 5px">
+              <div>
+                <a href="#">Thời khóa biểu tạm thời</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tư vấn trực tuyến -->
+        <div class="sidebar-box">
+          <div class="sidebar-head">
+            <p class="sidebar-heading">Tư vấn trực tuyến</p>
+          </div>
+
+          <div class="sidebar-list">
+            <div><a href="#">Hỏi đáp - Tư vấn trực tuyến</a></div>
+          </div>
+        </div>
+
+        <!-- Tài chính học vụ -->
+        <div class="sidebar-box">
+          <div class="sidebar-head">
+            <p class="sidebar-heading">Tài chính học vụ</p>
+          </div>
+
+          <div class="sidebar-list">
+            <div><a href="#">Thông tin công nợ học phí</a></div>
+            <div><a href="#">Thanh toán học phí trực tuyến</a></div>
+          </div>
+        </div>
+
+        <!-- Dịch vụ hành chính -->
+        <div class="sidebar-box">
+          <div class="sidebar-head">
+            <p class="sidebar-heading">Dịch vụ hành chính</p>
+          </div>
+
+          <div class="sidebar-list">
+            <div><a href="#">ĐK cấp giấy tờ</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- End sidebar -->
+
+      <!-- Begin Student Information -->
+      <div class="student-inf">
+        <div class="student-inf-head">
+          <p class="stuinf-heading">Thông tin cá nhân</p>
+        </div>
+
+        <!-- Thông tin sinh viên -->
+        <div class="student-box">
+          <div class="student-box-heading">
+            Thông tin sinh viên_20215308
+            <div class="fa-sharp fa-solid fa-pen-to-square" style="cursor: pointer"></div>
+          </div>
+        </div>
+
+        <hr class="student-inf-hr" />
+        <button class="submit-but add-but" id="del-addgroup" type="button">
+          Add group item
+        </button>
+        <!-- Group information -->
+        <div class="group-container"></div>
+
+        <button class="get-pdf submit-but add-but" type="button">
+          Get PDF
+        </button>
+        <p id="ghichu">
+          <i>Ghi chú&emsp;: </i>
+          <b>Nếu sinh viên thấy thông tin của mình chưa chính xác, xin vui
+            lòng liên hệ phòng Đào tạo để cập nhật lại.</b>
+        </p>
+      </div>
+    </div>
+    <!-- End Content -->
+  </div>
+</body>
+
+</html>

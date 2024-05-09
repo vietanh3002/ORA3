@@ -1,0 +1,361 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Times New Roman", Times, serif;
+}
+
+input,
+select {
+    padding: 5px;
+    border-radius: 5px;
+    /* outline: none; */
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Begin content */
+.content-container {
+    display: flex;
+}
+
+/* BEGIN SIDEBAR */
+.sidebar {
+    width: 24%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.sidebar-box {
+    width: 320px;
+    font: 14px 'Segoe UI', 'Helvetica Neue', 'Droid Sans', Arial, Tahoma, Geneva, Sans-serif;
+    width: 100%;
+    background-color: #f2f1eb;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar-head {
+    display: flex;
+    margin: 0 10px;
+}
+
+.sidebar-head img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.sidebar-heading {
+    color: red;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sidebar-list {
+    padding-right: 10px;
+    list-style-type: none;
+}
+
+.sidebar-list div {
+    box-shadow: 0 1px #ccc;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    padding-top: 12px;
+}
+
+
+.sidebar-list a {
+    /* font-weight: 300; */
+    text-decoration: none;
+    color: rgb(50, 121, 192);
+    height: 28px;
+    display: block;
+    width: 100%;
+    font-size: 1em;
+}
+
+.sidebar-list div:hover,
+.daotao-box .daotao-item:hover {
+    background-color: rgba(30, 30, 30, 0.1);
+    cursor: pointer;
+}
+
+.sidebar-list div:hover a {
+    color: red;
+}
+
+#letter-notification {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    padding-right: 1px;
+    /* padding-top: 1px; */
+    background-color: #dd420a;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+/* Đào tạo */
+#daotao .daotao-item {
+    box-shadow: 0 1px #ccc;
+    height: 32px;
+    align-items: center;
+    padding-left: 4px;
+    padding-top: 12px;
+}
+
+#daotao a {
+    text-decoration: none;
+    color: rgb(50, 121, 192);
+}
+
+.daotao-item a {
+    width: 90%;
+    display: inline-block;
+}
+
+#daotao .icons {
+    transform: rotate(-90deg);
+    color: red;
+    margin-left: -15px;
+    margin-right: 5px;
+}
+
+.daotao-box:hover .daotao-submenu {
+    display: block;
+}
+
+.daotao-submenu {
+    display: none;
+}
+
+.daotao-submenu a {
+    display: block;
+    box-shadow: 0 1px #ccc;
+    margin-left: 18px;
+    height: 28px;
+    padding-top: 7px;
+}
+
+.daotao-submenu a:hover {
+    background-color: rgba(30, 30, 30, 0.1);
+}
+
+/* Begin Student Information*/
+.student-inf {
+    width: calc(100%-300px);
+    width: 100%;
+    margin-top: 25px;
+}
+
+
+
+.student-inf-head p {
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 0 1px #ddd;
+    padding-bottom: 25px;
+}
+
+.student-box {
+    margin-top: 40px;
+}
+
+.student-box-heading {
+    color: red;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.fa-sharp {
+    margin-left: 8px;
+    color: #000;
+}
+
+.student-inf-hr {
+    width: 946px;
+    height: 5px;
+    background-color: orange;
+    border: none;
+    margin: 25px 0;
+}
+
+.student-inf-box {
+    display: flex;
+}
+
+.student-image {
+    width: 200px;
+    padding: 0 20px;
+}
+
+.student-image img {
+    box-shadow: 10px 10px 6px #ccc;
+    margin-bottom: 15px;
+}
+
+.student-image p {
+    text-align: center;
+}
+
+.student-inf-subbox {
+    width: 35%;
+    margin-left: 20px;
+    margin-top: -12px;
+}
+
+.student-inf-subbox p {
+    margin: 10px;
+    line-height: 1.7;
+}
+
+.col2 {
+    width: 50%;
+}
+
+#ghichu {
+    margin-bottom: 100px;
+}
+
+/* Submit box */
+#submit-box {
+    margin-top: 25px;
+    margin-left: 210px;
+}
+
+/* Submit button */
+.submit-but {
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #1E90FF;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#cancel-but {
+    background-color: red;
+}
+
+.submit-but:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 2555, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#anhchandung {
+    width: 151px;
+}
+
+
+/* ORA3: Group information */
+.group-item {
+    max-width: 1000px;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid orange;
+}
+
+.gr-head {
+    color: #0881e4;
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.info-container {
+    min-height: 20px;
+}
+
+.add-but {
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    margin: 0 20px 10px 0;
+}
+
+/* Info-box to add */
+.info-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label.info-label {
+    width: 150px;
+    margin-right: 10px;
+}
+
+input.info-label {
+    width: 113px !important;
+    margin-right: 10px;
+}
+
+.info-box input {
+    width: 850px;
+
+}
+
+/* Giá trị mục thông tin */
+div.info-input {
+    /* height: 19px; */
+    padding: 5px;
+    margin: 10px 0;
+    width: 850px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+}
+
+.info-box i {
+    margin-left: 10px;
+}
+
+.fa-trash,
+.fa-trash-can {
+    cursor: pointer;
+}
+
+.gr-head-input {
+    width: 120px;
+}
+
+.fa-trash-can {
+    COLOR: #000;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.type-input {
+    width: 200px;
+    margin: 0 5px;
+}
+
+
+
+/* .student-box .sidebar-heading */
